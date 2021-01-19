@@ -2,19 +2,32 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore
 
-var bici = [
-  {'nome': 'Atala', 'peso': '25'},
-  {'nome': 'Cannondale', 'peso': '20'},
-  {'nome': 'Merida', 'peso': '18'},
+let bici = [
+  {
+   nome: 'Masciarelli',
+   peso: 10
+ },
+ {
+   nome: 'Bianchi',
+   peso: 8
+ },
+ {
+   nome: 'Anaconda',
+   peso: 3
+ },
+ {
+   nome: 'PeppaPigCycle',
+   peso: 12
+ }
 ];
-// for (var i = 0; i < bici.length; i++) {
-//   var
-//   if (Math.min(bici.peso)) {
-//
-//   }
-// }
 
 
-bici.peso.reduce(function() {
-  return Math.min(a, b);
-});
+let biciLeggera = bici[0]
+
+for(let x = 1; x < bici.length; x++) {
+  if(bici[x].peso < biciLeggera.peso) {
+    biciLeggera = bici[x]
+  }
+}
+
+console.log(biciLeggera);
