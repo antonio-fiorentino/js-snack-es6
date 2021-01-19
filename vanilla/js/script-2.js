@@ -18,11 +18,21 @@ var squadre = [
   {'nome': 'Cosenza', 'punti': '0', 'falliSubiti': '0'},
 ];
 
-for (var i = 0; i < 6; i++) {
-  squadre.punti.push(randomNumber(0, 80));
-  console.log(squadre);
+for (let i = 0; i < squadre.length; i++) {
+  let thisTeam = squadre[i]
+  thisTeam.punti = randomNumber(0, 80);
+  thisTeam.falliSubiti  = randomNumber(0, 50);
 }
-for (var i = 0; i < 6; i++) {
-  squadre.falliSubiti.push(randomNumber(0, 80));
-  console.log(squadre);
+
+const nuovaSquadra = [];
+
+for (let i = 0; i < squadre.length; i++) {
+  let thisTeam = squadre[i];
+
+  const{'nome', 'falliSubiti'} = thisTeam;
+  nuovaSquadra.push({
+    'nome',
+    'falliSubiti',
+  })
 }
+ console.log(squadre);
