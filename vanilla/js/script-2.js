@@ -9,7 +9,7 @@ function randomNumber(min, max) {
   return result;
 };
 
-var squadre = [
+const squadre = [
   {'nome': 'Milan', 'punti': '0', 'falliSubiti': '0'},
   {'nome': 'Inter', 'punti': '0', 'falliSubiti': '0'},
   {'nome': 'Roma', 'punti': '0', 'falliSubiti': '0'},
@@ -29,10 +29,10 @@ const nuovaSquadra = [];
 for (let i = 0; i < squadre.length; i++) {
   let thisTeam = squadre[i];
 
-  const{'nome', 'falliSubiti'} = thisTeam;
+  const{nome, falliSubiti} = thisTeam;
   nuovaSquadra.push({
-    'nome',
-    'falliSubiti',
+    nome,
+    falliSubiti,
   })
 }
  console.log(squadre);
